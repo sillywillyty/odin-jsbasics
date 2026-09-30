@@ -1,0 +1,67 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  background-color: #1c2530;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+header {
+  text-align: center;
+  color: white;
+  padding: 32px 16px 16px;
+}
+
+header h1 {
+  margin-bottom: 16px;
+}
+
+.controls {
+  display: flex;
+  gap: 12px;
+  justify-content: center;
+}
+
+.controls button {
+  background-color: #3b7cf6;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  font-size: 14px;
+  font-weight: bold;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.controls button:hover {
+  background-color: #2f6ce0;
+}
+
+main {
+  padding: 24px;
+}
+
+#gridContainer {
+  display: flex;
+  flex-wrap: wrap;
+  width: 90vw;
+  max-width: 600px;
+  aspect-ratio: 1 / 1;
+  background-color: white;
+  border: 4px solid #3b7cf6;
+}
+
+.gridSquare {
+  background-color: white;
+}
+
+.gridSquare:hover {
+  background-color: rgb(50, 64, 255);
+}
