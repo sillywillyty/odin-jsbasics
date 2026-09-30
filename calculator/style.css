@@ -1,0 +1,87 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  background-color: #1c2530;
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.calculator {
+  display: grid;
+  grid-template-columns: repeat(4, 80px);
+  gap: 8px;
+  background-color: #2b3648;
+  padding: 16px;
+  border-radius: 8px;
+  width: 90vw;
+  max-width: 360px;
+}
+
+.display {
+  grid-column: 1 / -1;
+  background-color: #0f1521;
+  border-radius: 6px;
+  padding: 16px;
+  margin-bottom: 8px;
+  text-align: right;
+  overflow: hidden;
+  word-wrap: break-word;
+  word-break: break-all;
+}
+
+.previousOperand {
+  color: #8a93a6;
+  font-size: 14px;
+  min-height: 18px;
+}
+
+.currentOperand {
+  color: white;
+  font-size: 28px;
+  font-weight: bold;
+}
+
+button {
+  height: 60px;
+  border: none;
+  border-radius: 6px;
+  font-size: 18px;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+button:hover {
+  filter: brightness(1.1);
+}
+
+.numberButton {
+  background-color: #3b4a63;
+  color: white;
+}
+
+.operatorButton {
+  background-color: #3b7cf6;
+  color: white;
+}
+
+.equalsButton {
+  background-color: #22c55e;
+  color: white;
+}
+
+#clearButton,
+#backspaceButton {
+  background-color: #e74c3c;
+  color: white;
+}
+
+.span-two {
+  grid-column: span 2;
+}
